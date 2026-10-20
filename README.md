@@ -67,6 +67,20 @@ $ echo $MANTRA
 
 ---
 
+## 🐍 贡献图 / Contributions
+
+<div align="center">
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/10code2/10code2/output/snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/10code2/10code2/output/snake.svg" />
+  <img alt="贡献贪吃蛇" src="https://raw.githubusercontent.com/10code2/10code2/output/snake-dark.svg" />
+</picture>
+
+</div>
+
+---
+
 ## 📦 项目 / Projects
 
 ### 🚀 CloudLab — 基于 Docker 的多云服务云平台
