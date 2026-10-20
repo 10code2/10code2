@@ -57,11 +57,15 @@ $ echo $MANTRA
 
 ---
 
-## 🔥 连续提交 / Streak
+## 📊 数据统计 / Stats
 
 <div align="center">
 
 <img src="https://streak-stats.demolab.com?user=10code2&theme=github-dark-blue&hide_border=true&locale=zh_CN" alt="连续提交统计" />
+
+<img src="https://raw.githubusercontent.com/10code2/10code2/output/stats.svg" alt="GitHub 统计" />
+
+<img src="https://raw.githubusercontent.com/10code2/10code2/output/top-langs.svg" alt="常用语言" />
 
 </div>
 

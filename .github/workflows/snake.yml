@@ -1,4 +1,4 @@
-name: Generate Snake
+name: Generate Profile Images
 
 on:
   schedule:
@@ -17,6 +17,9 @@ jobs:
       contents: write
 
     steps:
+      - uses: actions/checkout@v4
+
+      # ---- 蛇形贡献图 ----
       - name: Generate GitHub Contributions Snake
         uses: Platane/snk/svg-only@v3
         with:
@@ -25,6 +28,24 @@ jobs:
             dist/snake.svg?palette=github-light
             dist/snake-dark.svg?palette=github-dark
 
+      # ---- 统计卡片 ----
+      - name: Generate stats card
+        uses: readme-tools/github-readme-stats-action@v1
+        with:
+          card: stats
+          options: username=${{ github.repository_owner }}&show_icons=true&theme=github_dark&hide_border=true
+          path: dist/stats.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate top-languages card
+        uses: readme-tools/github-readme-stats-action@v1
+        with:
+          card: top-langs
+          options: username=${{ github.repository_owner }}&layout=compact&langs_count=8&theme=github_dark&hide_border=true
+          path: dist/top-langs.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      # ---- 部署到 output 分支 ----
       - name: Deploy to output branch
         uses: crazy-max/ghaction-github-pages@v4
         with:
