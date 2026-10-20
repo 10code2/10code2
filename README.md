@@ -102,7 +102,9 @@ $ echo $MANTRA
 | 数据保护 | backup.sh | 定时备份配置与数据卷 |
 
 > 过程中处理了**镜像加速、证书 DNS 验证、防火墙切换、ICP 备案、内存优化**等真实问题。
-> 详见 👉 [MyCloud-Vault](https://github.com/10code2/MyCloud-Vault)
+>
+> - 📦 实际部署代码（可复现）：[**cloudlab**](https://github.com/10code2/cloudlab)
+> - 📝 完整学习笔记：[MyCloud-Vault](https://github.com/10code2/MyCloud-Vault)
 
 ### 🛠️ 其他项目
 
